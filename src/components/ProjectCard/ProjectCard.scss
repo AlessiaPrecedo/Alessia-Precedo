@@ -1,0 +1,111 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.project-card {
+  position: relative;
+  display: flex;
+  min-height: 420px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  overflow: hidden;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  background: $color-surface;
+  transition:
+    transform $transition-base,
+    border-color $transition-base,
+    background $transition-base;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(139, 92, 246, 0.4);
+    background: $color-surface-hover;
+  }
+
+  &__top {
+    @include flex-between;
+  }
+
+  &__number {
+    color: $color-text-muted;
+    font-size: $font-size-sm;
+  }
+
+  &__category {
+    color: $color-accent-light;
+    font-size: $font-size-xs;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin-block: 3rem;
+
+    h3 {
+      font-size: $font-size-xl;
+      line-height: 1.1;
+    }
+
+    p {
+      max-width: 500px;
+      margin-top: 1rem;
+      color: $color-text-secondary;
+      line-height: 1.7;
+    }
+  }
+
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+
+    span {
+      padding: 0.4rem 0.7rem;
+      border: 1px solid $color-border;
+      border-radius: 999px;
+      color: $color-text-secondary;
+      font-size: $font-size-xs;
+    }
+  }
+
+  &__bottom {
+    @include flex-between;
+    gap: 1rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: $color-text;
+      font-size: $font-size-sm;
+      font-weight: 500;
+      transition: color $transition-base;
+
+      &:hover {
+        color: $color-accent-light;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 2rem;
+
+    &__content {
+      h3 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  @include desktop {
+    min-height: 450px;
+  }
+}

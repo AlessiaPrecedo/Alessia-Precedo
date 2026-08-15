@@ -1,0 +1,50 @@
+@use "./variables" as *;
+
+@mixin container {
+  width: min(100% - 2rem, $container-width);
+  margin-inline: auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $color-border;
+  backdrop-filter: blur(12px);
+}
+
+@mixin hover-lift {
+  transition: transform $transition-base;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @media (min-width: $breakpoint-large) {
+    @content;
+  }
+}

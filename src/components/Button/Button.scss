@@ -1,0 +1,52 @@
+@use "../../styles/variables" as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 48px;
+  padding: 0.75rem 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform $transition-base,
+    background $transition-base,
+    border-color $transition-base,
+    color $transition-base;
+
+  svg {
+    transition: transform $transition-base;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+
+    svg {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  &--primary {
+    background: $color-accent;
+    color: white;
+
+    &:hover {
+      background: $color-accent-light;
+    }
+  }
+
+  &--secondary {
+    border-color: $color-border;
+    background: transparent;
+    color: $color-text;
+
+    &:hover {
+      border-color: $color-accent;
+      background: $color-surface-hover;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.how-i-build {
+  background: $color-bg;
+
+  &__steps {
+    display: grid;
+    border-top: 1px solid $color-border;
+  }
+}
+
+.build-step {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid $color-border;
+
+  &__number {
+    color: $color-accent-light;
+    font-size: $font-size-sm;
+    font-weight: 600;
+  }
+
+  &__content {
+    max-width: 650px;
+
+    h3 {
+      font-size: $font-size-xl;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      max-width: 550px;
+      margin-top: 0.75rem;
+      color: $color-text-secondary;
+      line-height: 1.7;
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: 100px 1fr;
+    padding: 3rem 0;
+
+    &__content {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: 150px 1fr;
+
+    &:hover {
+      .build-step__number {
+        transform: translateX(8px);
+      }
+    }
+
+    &__number {
+      transition: transform $transition-base;
+    }
+  }
+}

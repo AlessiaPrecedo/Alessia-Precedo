@@ -1,0 +1,29 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+.projects__controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid $color-border;
+    border-radius: 50%;
+    color: $color-text-secondary;
+    transition:
+      color $transition-base,
+      border-color $transition-base,
+      background $transition-base;
+
+    &:hover {
+      border-color: $color-accent;
+      background: $color-surface-hover;
+      color: $color-text;
+    }
+  }
+}

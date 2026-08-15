@@ -1,0 +1,51 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.contact {
+  background: $color-bg;
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid $color-border;
+
+    @include desktop {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
+  &__email {
+    color: $color-text;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-accent-light;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: $color-text-secondary;
+      font-size: $font-size-sm;
+      transition: color $transition-base;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-primary;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $font-primary;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+::selection {
+  background: $color-accent;
+  color: $color-text;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  @include container;
+}
+
+.section {
+  padding-block: $section-padding;
+}
