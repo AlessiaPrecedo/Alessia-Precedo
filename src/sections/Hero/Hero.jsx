@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import "./Hero.scss";
 import Button from "../../components/Button/Button";
+import HeroScene from "./HeroScene";
 
 const Hero = () => {
   return (
     <section className="hero" id="home">
+      <HeroScene />
       <div className="hero__glow" />
 
       <div className="hero__container">
