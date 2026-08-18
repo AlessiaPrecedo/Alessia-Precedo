@@ -1,48 +1,49 @@
 import { motion } from "framer-motion";
+import alessiaImg from "../../assets/alessia.jpg";
 import "./About.scss";
-import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const About = () => {
   return (
-    <section className="about section" id="about">
-      <div className="about__container container">
-        <SectionTitle
-          eyebrow="ABOUT ME"
-          title="More than"
-          highlight="just code."
-        />
+    <section className="about" id="about">
+      <div className="about__container">
+        <motion.div
+          className="about__image-wrapper"
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+          whileHover={{ y: -8 }}
+        >
+          <img
+            className="about__image"
+            src={alessiaImg}
+            alt="Alessia Precedo"
+          />
+        </motion.div>
 
-        <div className="about__content">
-          <motion.div
-            className="about__statement"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <p>
-              I&apos;m a junior full stack developer focused on building useful,
-              thoughtful and visually engaging web experiences.
-            </p>
-          </motion.div>
+        <motion.div
+          className="about__content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+        >
+          <p className="about__eyebrow">ABOUT ME</p>
 
-          <motion.div
-            className="about__text"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
+          <h2 className="about__title">More than just code.</h2>
+
+          <div className="about__text">
             <p>
-              My background in e-commerce taught me to think about technology
-              from a practical perspective: understanding users, solving
-              problems and turning ideas into something that actually works.
+              I'm a Junior Full Stack Developer focused on building modern,
+              functional and user-centered web experiences.
             </p>
 
             <p>
-              I enjoy working across the stack, learning new technologies and
-              continuously improving the way I build.
+              I enjoy turning ideas into real products, combining clean code,
+              thoughtful design and problem solving.
             </p>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

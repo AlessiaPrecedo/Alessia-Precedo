@@ -55,18 +55,18 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.7 }}
         >
           <a
-            href="https://github.com/"
+            href="https://github.com/AlessiaPrecedo"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             aria-label="GitHub"
           >
             GitHub
           </a>
 
           <a
-            href="https://linkedin.com/"
+            href="https://linkedin.com/in/alessiaprecedo"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
             LinkedIn

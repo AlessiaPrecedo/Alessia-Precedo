@@ -13,8 +13,8 @@ const projects = [
     description:
       "E-commerce desarrollado con React y Firebase, enfocado en una experiencia de compra clara y moderna.",
     technologies: ["React", "Firebase", "Sass"],
-    demo: "#",
-    github: "#",
+    demo: "https://eleodora-ecommerce.web.app/",
+    github: "https://github.com/AlessiaPrecedo/CreaTuLandingPrecedo.git",
   },
   {
     id: 2,
@@ -23,8 +23,8 @@ const projects = [
     description:
       "Landing page para una tatuadora, diseñada para presentar su trabajo, servicios y facilitar el contacto.",
     technologies: ["React", "Vite", "Sass"],
-    demo: "#",
-    github: "#",
+    demo: "https://juli-tattoo.vercel.app/",
+    github: "https://github.com/AlessiaPrecedo/juli-tattoo",
   },
   {
     id: 3,
@@ -33,8 +33,8 @@ const projects = [
     description:
       "Aplicación web para gestionar una rifa utilizando JavaScript y Firebase Firestore.",
     technologies: ["JavaScript", "Firebase", "Firestore"],
-    demo: "#",
-    github: "#",
+    demo: "https://atomic-rifa.web.app/",
+    github: "https://github.com/AlessiaPrecedo/Rifa",
   },
 ];
 
