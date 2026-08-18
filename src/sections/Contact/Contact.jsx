@@ -20,8 +20,8 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <a className="contact__email" href="mailto:tuemail@gmail.com">
-            tuemail@gmail.com
+          <a className="contact__email" href="mailto:alessiaprecedo777@gmail.com">
+            alessiaprecedo777@gmail.com
           </a>
 
           <div className="contact__links">
