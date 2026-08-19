@@ -45,7 +45,7 @@
   align-items: center;
   justify-content: center;
   cursor: grab;
-  touch-action: none;
+ touch-action: pan-y;
   user-select: none;
 
   &:active {

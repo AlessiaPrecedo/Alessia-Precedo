@@ -175,15 +175,14 @@ const Stack = () => {
       </div>
 
       <div className="stack__experience">
-        <motion.div
-          className="stack-orbit"
-          drag
-          dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
-          dragElastic={0}
-          onDrag={handleDrag}
-          whileTap={{ cursor: "grabbing" }}
-        >
-          <div className="stack-orbit__circle" />
+     <motion.div
+  className="stack-orbit"
+  drag="x"
+  dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
+  dragElastic={0}
+  onDrag={handleDrag}
+  whileTap={{ cursor: "grabbing" }}
+><div className="stack-orbit__circle" />
 
           <div className="stack-orbit__center">
             <span>STACK</span>
