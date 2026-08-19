@@ -229,7 +229,7 @@ const Stack = () => {
 
           <div className="stack__selected-icon">
             {(() => {
-              const SelectedIcon = selectedTech.icon;
+              const SelectedIcon = selectedTech.name;
 
               return <SelectedIcon />;
             })()}
