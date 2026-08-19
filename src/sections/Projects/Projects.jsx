@@ -11,7 +11,7 @@ const projects = [
     title: "Eleodora Pizarro Atelier",
     category: "E-Commerce",
     description:
-      "E-commerce desarrollado con React y Firebase, enfocado en una experiencia de compra clara y moderna.",
+      "A serverless landing page with an admin dashboard, developed using React and Firebase, designed to provide a clear, modern experience for showcasing services and managing inquiries.",
     technologies: ["React", "Firebase", "Sass"],
     demo: "https://eleodora-ecommerce.web.app/",
     github: "https://github.com/AlessiaPrecedo/CreaTuLandingPrecedo.git",
@@ -19,10 +19,10 @@ const projects = [
   {
     id: 2,
     title: "Juli Tattoo",
-    category: "Landing Page",
+    category: "E-Commerce",
     description:
-      "Landing page para una tatuadora, diseñada para presentar su trabajo, servicios y facilitar el contacto.",
-    technologies: ["React", "Vite", "Sass"],
+      "E-commerce desarrollado para una tatuadora, enfocado en la presentación de su trabajo, la venta de productos y la gestión de consultas.",
+    technologies: ["React", "Vite", "Google Sheets", "Mercado Pago API"],
     demo: "https://juli-tattoo.vercel.app/",
     github: "https://github.com/AlessiaPrecedo/juli-tattoo",
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "Atomic Bombs Roller Derby",
     category: "Web App",
     description:
-      "Aplicación web para gestionar una rifa utilizando JavaScript y Firebase Firestore.",
+      "Web application with a serverless admin interface to manage a raffle, using JavaScript and Firebase Firestore.",
     technologies: ["JavaScript", "Firebase", "Firestore"],
     demo: "https://atomic-rifa.web.app/",
     github: "https://github.com/AlessiaPrecedo/Rifa",

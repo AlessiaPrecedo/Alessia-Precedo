@@ -7,11 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container container">
         <span className="footer__copyright">
-          © {currentYear} Alessia Precedo
-        </span>
-
-        <span className="footer__built">Built with React & Sass</span>
-
+          © {currentYear} Alessia Precedo. All rights reserved.</span>
         <button
           className="footer__top"
           type="button"

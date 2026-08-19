@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Hero.scss";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Button from "../../components/Button/Button";
 import HeroScene from "./HeroScene";
 
@@ -26,8 +28,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
-          Alessia
-          <span>Precedo.</span>
+          <span>Alessia</span>
+          <span translate="no">Precedo.</span>
         </motion.h1>
 
         <motion.p
@@ -60,7 +62,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            GitHub
+            <FaGithub size={20} />
           </a>
 
           <a
@@ -69,7 +71,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            LinkedIn
+            <FaLinkedin size={20} />
           </a>
         </motion.div>
 
