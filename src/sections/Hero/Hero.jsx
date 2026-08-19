@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import "./Hero.scss";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Button from "../../components/Button/Button";
 import HeroScene from "./HeroScene";
 

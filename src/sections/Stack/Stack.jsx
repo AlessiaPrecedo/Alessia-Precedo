@@ -152,12 +152,9 @@ const Stack = () => {
       };
     });
   }, [rotation]);
-
-  const handleDrag = (_, info) => {
-    const movement = info.delta.x + info.delta.y;
-
-    setRotation((prev) => prev + movement * 0.35);
-  };
+const handleDrag = (_, info) => {
+  setRotation((prev) => prev + info.delta.x * 0.35);
+};
 
   const handleSelect = (technology) => {
     setSelectedTech(technology);
@@ -212,7 +209,6 @@ const Stack = () => {
                 onClick={() => handleSelect(technology)}
               >
                 <Icon />
-                <span>{technology.icon}</span>
               </motion.button>
             );
           })}
