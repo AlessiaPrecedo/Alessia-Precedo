@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./sections/About/About";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import WhatsApp from "./components/Wsp/Wsp";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </main>
 
       <Footer />
+      <WhatsApp />
     </>
   );
 }
