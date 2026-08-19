@@ -34,13 +34,11 @@ const About = () => {
 
           <div className="about__text">
             <p>
-              I'm a Junior Full Stack Developer focused on building modern,
-              functional and user-centered web experiences.
+             I am a junior Full Stack developer focused on creating modern, functional web experiences centered on both business and user needs.
             </p>
 
             <p>
-              I enjoy turning ideas into real products, combining clean code,
-              thoughtful design and problem solving.
+          I enjoy turning ideas into real products by combining clean code, thoughtful design, and problem-solving.
             </p>
           </div>
         </motion.div>

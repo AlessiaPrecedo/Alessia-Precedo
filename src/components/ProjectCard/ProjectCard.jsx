@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import "./ProjectCard.scss";
 
 const ProjectCard = ({
@@ -31,16 +32,15 @@ const ProjectCard = ({
 
       <div className="project-card__bottom">
         <div className="project-card__links">
-          {demo && (
-            <a href={demo} target="_blank" rel="noreferrer">
-              Live demo ↗
-            </a>
+          {demo && ( <Button href={demo} target="_blank" rel="noreferrer">
+              Live demo 
+            </Button>
           )}
 
           {github && (
-            <a href={github} target="_blank" rel="noreferrer">
-              GitHub ↗
-            </a>
+            <Button href={github} target="_blank" rel="noreferrer">
+              GitHub 
+            </Button>
           )}
         </div>
       </div>

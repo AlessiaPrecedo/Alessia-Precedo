@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import "./Contact.scss";
 
@@ -25,12 +26,12 @@ const Contact = () => {
           </a>
 
           <div className="contact__links">
-            <a href="#" target="_blank" rel="noreferrer">
-              LinkedIn ↗
+            <a href="https://www.linkedin.com/in/alessiaprecedo/" target="_blank" rel="noreferrer">
+              <FaLinkedin size={20} />
             </a>
 
-            <a href="#" target="_blank" rel="noreferrer">
-              GitHub ↗
+            <a href="https://github.com/alessiaprecedo" target="_blank" rel="noreferrer">
+              <FaGithub size={20} />
             </a>
           </div>
         </motion.div>
